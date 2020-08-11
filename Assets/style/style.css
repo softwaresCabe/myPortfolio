@@ -1,4 +1,10 @@
-/* Styling for the body */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #95a5a6;
   display: flex;
@@ -14,19 +20,6 @@ main {
 /* Styling for the navbar container */
 #nav-container {
   background-color: #3498db;
-}
-
-/* Animation for the wheel */
-.rotate {
-  animation: rotation 20s infinite linear;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
 }
 
 /* Creates a hover effect on the navbar menu options */
@@ -62,6 +55,10 @@ main {
   margin-bottom: 25px;
 }
 
+.div-title{
+  font-size: 12px;
+}
+
 /* For spacing around the header title text */
 .header-text-title {
   margin: 0.25rem 1rem;
@@ -72,10 +69,6 @@ main {
   margin: 0.5rem 1rem;
 }
 
-/* Styling for the "neo" in spontaneous */
-#neo {
-  color: #5e0035;
-}
 
 /* Styling for the cards */
 .card {
@@ -83,6 +76,7 @@ main {
   padding: 25px;
   box-shadow: 0 0 10px 4px;
   background-color: #ecf0f1 ;
+  height: 100%;
 }
 
 .card-action {
@@ -109,3 +103,12 @@ main {
   display: flex;
 }
 
+img {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.portfolio-image {
+  height: auto;
+  width: 350px;
+}
